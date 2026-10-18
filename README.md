@@ -8,7 +8,9 @@ Open `index.html` directly in a modern browser. No installation, build step, ser
 
 ## Publish on the web
 
-Use GitHub Pages to host this static app directly from a public repository's `main` branch, root folder. See [the publishing steps](DEPLOYMENT.md). No build or hosting configuration beyond enabling Pages is needed; `.nojekyll` is included. The source and upload package are prepared locally; a live URL exists only after the repository is uploaded and Pages deployment succeeds.
+Public app: **[Open Little Table](https://elsokolr.github.io/BoardGameExplainer/)**.
+
+Source: [elsokolr/BoardGameExplainer](https://github.com/elsokolr/BoardGameExplainer). GitHub Pages serves the `main` branch, root folder. Push changes to `main` to publish updates automatically. No build command or API keys are needed; `.nojekyll` is included. See [the publishing steps](DEPLOYMENT.md).
 
 ## Included
 

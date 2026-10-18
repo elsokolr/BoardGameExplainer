@@ -2,6 +2,8 @@
 
 This app is a static website. GitHub Pages can serve it directly; no build command, server, dependencies, or API keys are needed.
 
+Configured repository: [elsokolr/BoardGameExplainer](https://github.com/elsokolr/BoardGameExplainer). Public address: **https://elsokolr.github.io/BoardGameExplainer/**. The publishing source is `main`, `/ (root)`, with HTTPS enabled.
+
 ## First publication
 
 1. Create a **public** GitHub repository named `little-table` under your account. Leave the automatic README, license, and .gitignore options unchecked because the project already has its own files.
