@@ -1,0 +1,22 @@
+# Local credentials and editor settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.codex/
+.agents/
+.aws/
+
+# Generated uploads and temporary browser checks
+*.zip
+.publish/
+.qa*
+.*-qa.html
+.*-preview.html
+.skull-tools/
+
+# Operating system files
+Thumbs.db
+.DS_Store
+Desktop.ini

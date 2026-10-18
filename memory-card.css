@@ -1,0 +1,40 @@
+.memory-panel{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:32px;align-items:center;padding:28px;background:var(--green-soft);border:1px solid var(--line);border-radius:15px;margin-bottom:25px}.memory-panel>div>p{max-width:340px;margin:12px 0 20px}.memory-panel .aq-note{margin-bottom:0}.memory-card{width:min(340px,100%);min-width:0;max-width:100%;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 6px 20px #25321d08;display:flex;flex-direction:column;gap:14px}.memory-card-heading .eyebrow{font-size:7px;letter-spacing:1.3px;margin-bottom:6px}.memory-card-heading h2{font-size:21px!important;line-height:1.3;letter-spacing:-.6px}.memory-card-heading>small{display:block;color:var(--muted);font-size:8px;letter-spacing:.8px;margin-top:6px}.memory-formula{background:var(--green-soft);border-radius:8px;padding:12px;text-align:center;display:flex;flex-direction:column;gap:5px}.memory-formula strong{font-size:13px;color:var(--text);line-height:1.5}.memory-formula span{font-size:10px;color:var(--muted)}.memory-steps{list-style:none;padding:0;margin:0;display:grid;gap:13px}.memory-steps li{display:grid;grid-template-columns:29px 1fr;gap:10px;align-items:start}.memory-symbol{display:grid;place-items:center;background:var(--purple);color:var(--purple-ink);border-radius:7px;height:29px;font-size:18px}.memory-steps li:nth-child(even) .memory-symbol{background:var(--green-soft);color:var(--green)}.memory-card h3{font-size:9px!important;letter-spacing:1.1px;line-height:1.5;margin:0 0 4px}.memory-card p{font-size:11px!important;line-height:1.65!important;margin:0!important}.memory-card .memory-footnote{font-size:10px!important;border-top:1px solid var(--line);padding-top:12px}.memory-caption{font-size:8px;color:var(--muted)}.memory-pdf-link{border-top:1px solid var(--line);margin-top:25px;padding-top:25px}.memory-pdf-link p{margin-top:10px}.memory-pdf-link .button{margin-right:20px}.memory-pdf-link .quiet-link{margin-top:16px}.large-text .memory-card{width:100%}.large-text .memory-panel{grid-template-columns:minmax(0,1fr)}.large-text .memory-card p{font-size:16px!important}.large-text .memory-card h3{font-size:12px!important}
+.memory-actions{display:flex;flex-wrap:wrap;gap:12px}
+.memory-actions .button{margin:0}
+.memory-viewer{width:min(520px,calc(100% - 24px));max-height:calc(100vh - 24px);max-height:min(880px,calc(100dvh - 24px));padding:20px;overflow:hidden}
+.memory-viewer[open]{display:flex;flex-direction:column;gap:16px}
+.memory-viewer-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-shrink:0}
+.memory-viewer-header .eyebrow{font-size:8px;margin:0 0 6px}
+.memory-viewer-header h2{font-size:21px;margin:0}
+.memory-viewer-header .icon-button{flex-shrink:0}
+#memory-viewer-card{overflow-y:auto;overscroll-behavior:contain;min-height:0;padding:3px}
+.memory-viewer .memory-card{width:100%;box-shadow:none;padding:22px;gap:18px}
+.memory-viewer .memory-card p{font-size:14px!important;line-height:1.7!important}
+.memory-viewer .memory-card h3{font-size:11px!important}
+.memory-viewer .memory-formula strong{font-size:15px}
+.memory-viewer .memory-formula span{font-size:12px}
+.memory-viewer .memory-card .memory-footnote{font-size:12px!important}
+.memory-viewer-back{flex-shrink:0;align-self:center}
+.large-text .memory-viewer .memory-card p{font-size:17px!important}
+.large-text .memory-viewer .memory-card h3{font-size:13px!important}
+@media(max-width:450px){.memory-viewer{padding:14px}.memory-viewer .memory-card{padding:16px}.memory-viewer-header h2{font-size:19px}}
+@media(max-width:1100px){.memory-panel{grid-template-columns:minmax(0,1fr)}.memory-card{justify-self:center}.memory-panel>div>p{max-width:none}}
+@media(max-width:450px){.memory-panel{padding:18px;gap:25px}.memory-card{padding:16px}.memory-panel .button{width:100%}.memory-formula strong{font-size:12px}}
+@media print{
+  @page pocket{size:A6 portrait;margin:7mm}
+  #print-guide.memory-print{page:pocket}
+  #print-guide.memory-print .memory-card{width:90mm;height:130mm;max-width:none;margin:0;padding:4mm;border:1px solid #888;border-radius:3mm;box-shadow:none;gap:2.5mm;break-inside:avoid;overflow:visible}
+  #print-guide.memory-print .memory-card h2{font-size:15pt!important}
+  #print-guide.memory-print .memory-card-heading .eyebrow{font-size:6pt;margin:0 0 1mm}
+  #print-guide.memory-print .memory-card-heading>small{font-size:6pt;margin-top:1mm}
+  #print-guide.memory-print .memory-formula{padding:2mm;gap:1mm}
+  #print-guide.memory-print .memory-formula strong{font-size:9pt}
+  #print-guide.memory-print .memory-formula span{font-size:7pt}
+  #print-guide.memory-print .memory-steps{gap:2.5mm}
+  #print-guide.memory-print .memory-steps li{grid-template-columns:7mm 1fr;gap:2mm;break-inside:avoid}
+  #print-guide.memory-print .memory-symbol{height:7mm;font-size:13pt;border:1px solid #bbb}
+  #print-guide.memory-print .memory-card h3{font-size:7pt!important;margin-bottom:.7mm;letter-spacing:.5pt}
+  #print-guide.memory-print .memory-card p{font-size:8pt!important;line-height:1.4!important}
+  #print-guide.memory-print .memory-card .memory-footnote{font-size:7pt!important;padding-top:2mm}
+  #print-guide.memory-print .memory-caption{font-size:6pt;margin-top:auto}
+}

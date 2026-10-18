@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="A cozy home for clear board game rules, visual setup guides, and quick reminders.">
+  <title>Little Table — A little help for game night</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="game.css">
+  <link rel="stylesheet" href="memory-card.css">
+  <link rel="stylesheet" href="charlatans.css">
+  <link rel="stylesheet" href="game-media.css">
+  <link rel="stylesheet" href="skull-king.css">
+  <link rel="stylesheet" href="game-language.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <button class="mobile-menu icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar" data-action="menu">☰</button>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home" aria-label="Little Table home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>little table<span class="brand-dot">.</span></span></a>
+    <div class="sidebar-caption">A LITTLE HELP FOR GAME NIGHT</div>
+    <nav aria-label="Main navigation">
+      <span class="nav-label">YOUR CORNER</span>
+      <a href="#home" data-route="home"><span data-icon="home"></span>Home</a>
+      <a href="#library" data-route="library"><span data-icon="library"></span>Game library <span class="nav-count">0</span></a>
+      <a href="#saved" data-route="saved"><span data-icon="heart"></span>Saved games</a>
+      <span class="nav-label second-label">A HELPING HAND</span>
+      <a href="#guide" data-route="guide"><span data-icon="sparkles"></span>How it works</a>
+      <a href="#settings" data-route="settings"><span data-icon="settings"></span>Settings</a>
+    </nav>
+    <div class="sidebar-note"><span class="tiny-star">✳</span><strong>Good company.<br>Great game nights.</strong><p>We’ll take care of the rules.<br>You bring the snacks.</p><span class="note-doodle" aria-hidden="true">♡</span></div>
+    <div class="sidebar-footer"><span class="status-dot"></span> Made for time together</div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb"><span data-icon="home"></span><span class="crumb-divider">/</span><span id="breadcrumb">Home</span></div><div class="topbar-actions"><span class="topbar-note">Less scrolling, more playing <span aria-hidden="true">✧</span></span><button id="language-toggle" class="language-toggle" data-action="language" type="button" lang="fr" aria-label="Passer les explications en français">Français</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="page-footer"><span>little table<span class="brand-dot">.</span> <span class="footer-tagline">A little help. A lot of play.</span></span><a href="#guide">Made for your next game night <span aria-hidden="true">↗</span></a></footer>
+  </div>
+  <dialog id="request-dialog" aria-labelledby="dialog-title">
+    <form id="request-form">
+      <button class="dialog-close icon-button" type="button" data-action="close-dialog" aria-label="Close">×</button>
+      <span class="eyebrow">MAKE ROOM AT THE TABLE</span><h2 id="dialog-title">What should we play next?</h2>
+      <p>Add a game to your personal wishlist. It stays on this device until its guide is ready to be added.</p>
+      <label for="game-name">Game name</label><input id="game-name" name="game" placeholder="That game you’ve been meaning to learn…" maxlength="100" required autocomplete="off">
+      <button class="button primary" type="submit">Add to my wishlist <span aria-hidden="true">↗</span></button>
+    </form>
+  </dialog>
+  <dialog id="memory-dialog" class="memory-viewer" aria-labelledby="memory-viewer-title">
+    <header class="memory-viewer-header"><div><span class="eyebrow">AT THE TABLE</span><h2 id="memory-viewer-title"></h2></div><button class="icon-button" type="button" data-action="close-memory" aria-label="Close memory card" autofocus>×</button></header>
+    <div id="memory-viewer-card"></div>
+    <button class="button memory-viewer-back" type="button" data-action="close-memory">Back to the guide</button>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="game-media.js" defer></script>
+  <script src="antiquity-quest.js" defer></script>
+  <script src="sea-salt-paper.js" defer></script>
+  <script src="bunny-kingdom.js" defer></script>
+  <script src="charlatans.js" defer></script>
+  <script src="skull-king.js" defer></script>
+  <script src="game-resources.js" defer></script>
+  <script src="game-french.js" defer></script>
+  <script src="game-language.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

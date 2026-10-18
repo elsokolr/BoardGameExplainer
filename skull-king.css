@@ -1,0 +1,19 @@
+.sk-table{background:var(--green-soft)}
+.sk-round-reminder{display:flex;gap:12px;justify-content:space-around;margin:24px 0}
+.sk-round-reminder>span{font-size:11px;display:flex;flex-direction:column;gap:8px}
+.sk-round-reminder b{font-family:Manrope,sans-serif;font-size:28px;color:var(--green)}
+.sk-card-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:24px 0}
+.sk-play-card{width:110px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.sk-play-card .actual-game-icon{width:76px;height:105px}
+.sk-play-card small{font-size:11px;color:var(--muted);line-height:1.6}
+.sk-trick-result{margin-top:20px;padding:20px;background:var(--green-soft);border-radius:12px}
+.sk-trick-result p{margin-top:10px}
+.sk-score-result{background:var(--green-soft);border:1px solid var(--line);border-radius:12px;padding:24px;margin-top:20px}
+.sk-score-result .eyebrow{margin-bottom:8px}
+.sk-score-number{font-family:Manrope,sans-serif;display:block;font-size:40px;color:var(--green);line-height:1.4}
+.sk-score-result p{margin-top:10px}
+.sk-calculator .setup-options{gap:15px}
+.sk-calculator .setup-options label{flex:1;min-width:85px}
+.sk-calculator .setup-options select{width:100%}
+@media(max-width:600px){.sk-card-row{gap:10px}.sk-play-card{width:calc((100% - 20px)/3);min-width:65px}.sk-play-card .actual-game-icon{width:62px;height:90px}.sk-play-card small{font-size:10px}.sk-trick-result{padding:16px}.sk-score-result{padding:20px}}
+@media print{#print-guide .sk-play-card .actual-game-icon{width:18mm;height:26mm}#print-guide .sk-trick-example,#print-guide .sk-calculator{break-inside:avoid}}
